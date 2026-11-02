@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+
+<html class="client-nojs" data-offline-wiki="true" dir="ltr" lang="en">
+<head><meta charset="utf-8"/><meta content="default-src 'none'; img-src 'self' file: data:; style-src 'self' file: 'unsafe-inline'; font-src 'self' file: data:; media-src 'self' file: data:" http-equiv="Content-Security-Policy"/>
+<meta charset="utf-8"/>
+<title>Combat/Mechanics - Stardew Valley Wiki</title>
+
+
+<link href="../../assets/d2/d2699be9ea407dfb8d6d7908b5955c5804e951fce029f3a5d2ed2d22383d4d49.css" rel="stylesheet"/>
+
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="../../assets/34/34c968fcf174831c4471b4933ca7d7d13163d27495fa45448a50f6155f7470fa.css" rel="stylesheet"/>
+<meta content="MediaWiki 1.35.1" name="generator"/>
+<meta content="In Stardew Valley, damage dealt to monsters is determined by a combination of weapon stats, rings, professions, and Luck." name="description"/>
+
+
+
+
+
+<meta content="Combat/Mechanics - Stardew Valley Wiki" property="og:title"/>
+<meta content="Stardew Valley Wiki" property="og:site_name"/>
+<meta content="https://stardewvalleywiki.com/Combat/Mechanics" property="og:url"/>
+<meta content="In Stardew Valley, damage dealt to monsters is determined by a combination of weapon stats, rings, professions, and Luck." property="og:description"/>
+<meta content="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/site_logo_sm.png" property="og:image"/>
+<meta content="2026-03-19T15:58:31Z" property="article:modified_time"/>
+<meta content="2026-03-19T15:58:31Z" property="article:published_time"/>
+<meta content="@stardewwiki" property="twitter:site"/>
+<meta content="Combat/Mechanics - Stardew Valley Wiki" property="twitter:title"/>
+<meta content="In Stardew Valley, damage dealt to monsters is determined by a combination of weapon stats, rings, professions, and Luck." property="twitter:description"/>
+<meta content="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/site_logo_sm.png" property="twitter:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+
+<!--[if lt IE 9]><script src="/mediawiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+<link href="../../offline.css" rel="stylesheet"/></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Combat_Mechanics rootpage-Combat_Mechanics skin-vector action-view minerva--history-page-action-enabled skin-vector-legacy">
+<div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+<a id="top"></a>
+<div class="mw-body-content" id="siteNotice"></div>
+<div class="mw-indicators mw-body-content">
+</div>
+<h1 class="firstHeading" id="firstHeading" lang="en">Combat/Mechanics</h1>
+<div class="mw-body-content" id="bodyContent">
+<div class="noprint" id="siteSub">From Stardew Valley Wiki</div>
+<div id="contentSub"></div>
+<div id="contentSub2"></div>
+<div id="jump-to-nav"></div>
+<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><dl><dd><i>This article is about combat mechanics. For information about the combat <a href="../../en/pages/1475.html" title="Skills">skill</a>, see <a href="../../en/pages/3389.html" title="Combat">Combat</a>.</i></dd></dl>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Damage"><span class="tocnumber">1</span> <span class="toctext">Damage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Formula_overview"><span class="tocnumber">1.1</span> <span class="toctext">Formula overview</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Base_damage_roll"><span class="tocnumber">1.2</span> <span class="toctext">Base damage roll</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Critical_Hit_Check"><span class="tocnumber">1.3</span> <span class="toctext">Critical Hit Check</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Attack_Stat_Bonus"><span class="tocnumber">1.4</span> <span class="toctext">Attack Stat Bonus</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Profession_Bonuses"><span class="tocnumber">1.5</span> <span class="toctext">Profession Bonuses</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Desperado_Profession"><span class="tocnumber">1.6</span> <span class="toctext">Desperado Profession</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Enchantments"><span class="tocnumber">1.7</span> <span class="toctext">Enchantments</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Monster_defense"><span class="tocnumber">1.8</span> <span class="toctext">Monster defense</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Critical_hit_chance"><span class="tocnumber">2</span> <span class="toctext">Critical hit chance</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Calculation"><span class="tocnumber">2.1</span> <span class="toctext">Calculation</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Examples"><span class="tocnumber">2.2</span> <span class="toctext">Examples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Critical_hit_damage"><span class="tocnumber">3</span> <span class="toctext">Critical hit damage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Calculation_2"><span class="tocnumber">3.1</span> <span class="toctext">Calculation</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Example"><span class="tocnumber">3.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Player_defense"><span class="tocnumber">4</span> <span class="toctext">Player defense</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Damage_variance"><span class="tocnumber">4.1</span> <span class="toctext">Damage variance</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Determining_player_defense"><span class="tocnumber">4.2</span> <span class="toctext">Determining player defense</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Damage_is_applied"><span class="tocnumber">4.3</span> <span class="toctext">Damage is applied</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="Damage">Damage</span></h2>
+<p>In Stardew Valley, damage dealt to monsters is determined by a combination of weapon stats, rings, professions, and <a href="../../en/pages/3133.html" title="Luck">Luck</a>.
+</p>
+<h3><span class="mw-headline" id="Formula_overview">Formula overview</span></h3>
+<p><code>
+FinalDamage = (BaseDamage × CritMultiplier (if crit)<br/>
+    + Attack (stat) × 3)<br/>
+    × FighterBonus (×1.1 if active)<br/>
+    × BruteBonus (×1.15 if active)<br/>
+    × DesperadoBonus (×2 if crit and active)<br/>
+    → Modified by enchantments<br/>
+    → Reduced by monster defense</code>
+</p>
+<h3><span class="mw-headline" id="Base_damage_roll">Base damage roll</span></h3>
+<ul><li>A random value is rolled between the weapon’s <samp>minDamage</samp> and <samp>maxDamage</samp>.</li>
+<li><a href="../../en/pages/11015.html#Weapon_forging" title="Forge">Ruby forging</a> increases a weapon's <samp>minDamage</samp> and <samp>maxDamage</samp> by 10% per Ruby (up to 3)<sup class="reference" id="cite_ref-rubyenchantment_1-0"><a href="#cite_note-rubyenchantment-1">[1]</a></sup>. Three Ruby forges would increase <samp>minDamage</samp> and <samp>maxDamage</samp> by 30% total.</li>
+<li><a href="../../en/pages/2725.html" title="Ruby Ring">Ruby Rings</a> and <a href="../../en/pages/2722.html" title="Iridium Band">Iridium Bands</a> affect <samp>minDamage</samp> and <samp>maxDamage</samp> by 10% per ring. These effects are multiplicative with the <a href="../../en/pages/11015.html#Weapon_forging" title="Forge">Ruby forging</a> increase<sup class="reference" id="cite_ref-ringcrit_2-0"><a href="#cite_note-ringcrit-2">[2]</a></sup>.</li>
+<li>This makes the effective <samp>minDamage</samp> and <samp>maxDamage</samp> formula <code>minDamage = weaponMinDamage × (100% + rubyForgeCount × 10%) × (100% + ringBonusPercent)</code>, where <samp>ringBonusPercent</samp> is the sum of all equipped ring effects which increase Attack by a percentage. If a player equipped two combined rings of <a href="../../en/pages/2722.html" title="Iridium Band">Iridium Band</a> and <a href="../../en/pages/2725.html" title="Ruby Ring">Ruby Ring</a>, <samp>ringBonusPercent</samp> would be <samp>10% (Ruby Ring) + 10% (Iridium Band) + 10% (Ruby Ring) + 10% (Iridium Band) = 40%</samp>.</li></ul>
+<h3><span class="mw-headline" id="Critical_Hit_Check">Critical Hit Check</span></h3>
+<ul><li>If a crit occurs, the base damage is multiplied by critMultiplier, which is calculated as: <code>critMultiplier = (3 + CritPower / 50) × (1 + CriticalPowerMultiplier)</code></li>
+<li><samp>CritPower</samp> is the total of the <a href="../../en/pages/5112.html" title="Crit. Power">Crit. Power</a> stat from <a href="../../en/pages/210.html" title="Weapons">Weapons</a> and <a href="../../en/pages/11015.html#Weapon_forging" title="Forge">Jade forging</a>.</li>
+<li><samp>CriticalPowerMultiplier</samp> is the effects of buffs: <a href="../../en/pages/11015.html#Enchantments" title="Forge">Innate enchantments</a> and <a href="../../en/pages/2733.html" title="Jade Ring">Jade Ring</a></li></ul>
+<h3><span class="mw-headline" id="Attack_Stat_Bonus">Attack Stat Bonus</span></h3>
+<ul><li>The player’s Attack stat (from food, gear, and +Attack <a href="../../en/pages/11015.html#Enchantments" title="Forge">Innate enchantments</a>) adds: <code>+3 damage per Attack point</code></li></ul>
+<h3><span class="mw-headline" id="Profession_Bonuses">Profession Bonuses</span></h3>
+<ul><li>Fighter: +10% damage</li>
+<li>Brute: +15% damage</li>
+<li>These are applied multiplicatively and stack, so if both Fighter and Brute are active, the effective damage increase is <code>110% × 115% = 127%</code>.</li></ul>
+<h3><span class="mw-headline" id="Desperado_Profession">Desperado Profession</span></h3>
+<ul><li>If the hit is a critical strike and the player has the <a href="../../en/pages/1475.html#Combat" title="Skills">Desperado</a> profession, damage is doubled.</li></ul>
+<h3><span class="mw-headline" id="Enchantments">Enchantments</span></h3>
+<p>If a weapon is <a href="../../en/pages/11015.html#Combat_enchantments" title="Forge">enchanted</a> with Bug Slayer or Crusader and the damaged monster type matches the enchantment effect, damage is increased by 50%.
+</p>
+<h3><span class="mw-headline" id="Monster_defense">Monster defense</span></h3>
+<p>Monster defense is subtracted from the damage roll. Damage is always at least 1, even after defense reduction.
+</p>
+<h2><span class="mw-headline" id="Critical_hit_chance">Critical hit chance</span></h2>
+<h3><span class="mw-headline" id="Calculation">Calculation</span></h3>
+<p>Critical hit chance is computed in the following order:
+</p><p><b>Calculate weapon crit chance</b>
+</p><p>In 1.5, the <a href="../../en/pages/11015.html#Weapon_forging" title="Forge">Aquamarine forging</a> increases weapon critical hit chance by 4.6%<sup class="reference" id="cite_ref-aquamarineenchantment_3-0"><a href="#cite_note-aquamarineenchantment-3">[3]</a></sup>.
+<code>CritChance = Base weapon crit. chance<sup class="reference" id="cite_ref-weaponsxnb_4-0"><a href="#cite_note-weaponsxnb-4">[4]</a></sup> + (4.6% × number of Aquamarine forges)</code>
+</p><p>If weapon type is <a href="../../en/pages/210.html#Dagger" title="Weapons">dagger</a>, <code>CritChance = (CritChance + 0.5%) × 1.12</code><sup class="reference" id="cite_ref-dagger_5-0"><a href="#cite_note-dagger-5">[5]</a></sup>
+</p><p><b>Apply <a href="../../en/pages/2721.html" title="Aquamarine Ring">Aquamarine Ring</a> and <a href="../../en/pages/11015.html#Innate_enchantments" title="Forge">innate enchantments</a></b>
+</p><p>Each <a href="../../en/pages/2721.html" title="Aquamarine Ring">aquamarine ring</a> equipped gives a 10% bonus.<sup class="reference" id="cite_ref-ringcrit_2-1"><a href="#cite_note-ringcrit-2">[2]</a></sup>
+If the weapon has a "+X Crit. Chance" <a href="../../en/pages/11015.html#Innate_enchantments" title="Forge">innate enchantment</a>, then each enchantment level adds a 2% bonus (up to 6% for a level 3 enchantment). (The tooltip displays "+1 Crit. Chance" for a level 1 enchantment.)
+<code>CritChance = (CritChance × (1 + number of Aquamarine rings × 10% + Innate enchantment level × 2%)</code>
+</p><p><b>Apply Blessing of Fangs bonus</b>
+</p><p>If the Blessing of Fangs buff from <a href="../../en/pages/15414.html" title="Statue Of Blessings">Statue Of Blessings</a> is active, Critical hit chance gets an additive increase of 10%.
+<code>CritChance = CritChance + 10%</code>
+</p><p><b>Apply Scout profession</b>
+</p><p>If the player has the Scout Profession, critical hit chance is increased by 50%.<sup class="reference" id="cite_ref-scoutcode_6-0"><a href="#cite_note-scoutcode-6">[6]</a></sup>
+<code>CritChance = CritChance × 150%</code>
+</p><p><b>Apply Luck</b>
+</p><p>Critical hit chance is increased based on the player's <a href="../../en/pages/3133.html" title="Luck">Luck</a><sup class="reference" id="cite_ref-luckcrit_7-0"><a href="#cite_note-luckcrit-7">[7]</a></sup>.
+<code>CritChance = LuckLevel * CritChance / 40</code>
+</p>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<p><b><a href="../../en/pages/3968.html" title="Galaxy Sword">Galaxy Sword</a> build</b>
+</p>
+<ul><li>Aquamarine forging x3</li>
+<li>Aquamarine ring x2</li>
+<li>Blessing of Fangs</li>
+<li>Scout profession</li>
+<li>2 Luck</li></ul>
+<p>Calculation:
+</p>
+<ol><li>Weapon crit chance: <code>2% + (4.6% × 3 (Aquamarine forging)) = 15.8%</code></li>
+<li>Rings &amp; innate enchantment: <code>15.8% × (1 + 10% × 2 (Aquamarine rings)) = 15.8% × 120% = 19.0%</code></li>
+<li>Blessing of Fangs: <code>19% + 10% = 29%</code></li>
+<li>Scout profession: <code>29% × 150% = 43.4%</code></li>
+<li>Luck: <code>43.4% + 2 (Luck) × 43.4% / 40 = 43.4% + 2.2 = 45.6%</code></li></ol>
+<h2><span class="mw-headline" id="Critical_hit_damage">Critical hit damage</span></h2>
+<h3><span class="mw-headline" id="Calculation_2">Calculation</span></h3>
+<p>A critical strike does additional damage to an enemy.  A special sound plays when hitting a critical strike, and the damage numbers that pop up show the greater damage amount.  A critical strike effectively multiplies the damage roll by a calculated value called <samp>CritMultiplier</samp> in this article, calculated as follows: <code>CritMultiplier = (3 + Crit. Power (stat) / 50) × (1 + Crit. Power Bonus)</code>
+</p><p>The <a href="../../en/pages/1475.html#Combat" title="Skills">Desperado</a> Profession also affects the damage dealt by a Critical strike, doubling damage after bonus <a href="../../en/pages/3516.html" title="Attack">Attack</a> damage has been added. (<a href="../../en/pages/3516.html" title="Attack">Attack</a> stat is otherwise a "flat" bonus which is not increased by Critical strike bonuses.)
+</p><p><a href="../../en/pages/5112.html" title="Crit. Power">Crit. Power</a> (stat) can be found on:
+</p>
+<ul><li><a href="../../en/pages/210.html" title="Weapons">Weapons</a></li>
+<li><a href="../../en/pages/11015.html#Combat_enchantments" title="Forge">Jade enchantments</a>: +5 Crit. Power per enchantment</li></ul>
+<p>Crit. Power Bonus is increased by:
+</p>
+<ul><li><a href="../../en/pages/2733.html" title="Jade Ring">Jade Ring</a>: +10% per ring</li>
+<li><a href="../../en/pages/11015.html#Innate_enchantments" title="Forge">Innate enchantments</a>: +50% per enchantment level. A Crit. Power Innate enchantment shows as +25 "Crit. Power" per level, so a "+75 Crit. Power" tooltip represents a level 3 enchantment and thus increases Crit. Power Bonus by 150%.</li></ul>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<ul><li>A normal attack using the <a href="../../en/pages/3909.html" title="Lava Katana">Lava Katana</a> can do 55-64 damage. Assume an attack rolls 60 damage.</li>
+<li>A Lava Katana has 25 Crit. Power, so <code>CritMultiplier = 3 + 25 / 50 = 3.5</code></li>
+<li>If the Lava Katana was forged with 3 Jades, Crit. Power would be increased by 15, for a total of 40 (though it shows up as +39 ingame due to rounding errors). This means the damage would instead be <code>CritMultiplier = 3 + (25 + 15) / 50 = 3 + 40 / 50 = 3.8</code>.</li>
+<li>With 2 Jade Rings and a +75 Crit. Power (level 3) innate enchantment, Crit. Power Bonus would equal <code>10% (Jade Ring) x 2 + 150% (Innate enchantment) = 170%</code>, making <code>CritMultiplier = 3.8 × (100% + 170%) = 10.26</code>.</li>
+<li>A base damage roll of 60 damage that was a critical strike with this setup would deal <code>60 × 10.26 = 615.6</code> damage.</li>
+<li>The <a href="../../en/pages/1475.html#Combat" title="Skills">Desperado</a> effectively doubles the damage again (after the Attack stat is applied), so the resulting damage would be <code>615.6 × 2 = 1231.2</code>.</li></ul>
+<h2><span class="mw-headline" id="Player_defense">Player defense</span></h2>
+<h3><span class="mw-headline" id="Damage_variance">Damage variance</span></h3>
+<p>Monster damage varies by a random fluctuation between <samp>7/8</samp>ths and just below <samp>9/8</samp>ths of the <a href="../../en/pages/1540.html" title="Monsters">Monster</a>'s base damage<sup class="reference" id="cite_ref-farmerdamage_8-0"><a href="#cite_note-farmerdamage-8">[8]</a></sup>. The formula can be expressed as follows: <code>minDamage &lt;= actualDamage &lt; maxDamage</code>, where <code>fluctuationDamage = int(monsterBaseDamage / 8)</code> and <code>minDamage = monsterBaseDamage - fluctuationDamage</code> and <code>maxDamage = monsterBaseDamage + fluctuationDamage</code>.
+</p><p>Example: A <a href="../../en/pages/2904.html" title="Shadow Brute">Shadow Brute</a> has a base damage of 18, so <code>fluctationDamage = 18 / 8 = 2.25 =&gt; 2</code>, meaning the actual damage ranges between <samp>16</samp> and <samp>19</samp>, because <samp>18 - 2 = 16</samp> and <samp>18 + 2 = 20</samp>, but the upper bound is less than <samp>20</samp> (not less than or equal).
+</p>
+<h3><span class="mw-headline" id="Determining_player_defense">Determining player defense</span></h3>
+<p>Applicable defense is the player's <a href="../../en/pages/3513.html" title="Defense">Defense</a> stat total from among <a class="mw-redirect" href="../../en/pages/4320.html" title="Boots">Boots</a>, <a href="../../en/pages/210.html" title="Weapons">Weapons</a>, <a href="../../en/pages/1458.html" title="Rings">Rings</a>, <a class="mw-redirect" href="../../en/pages/1439.html" title="Food">Food</a> buffs plus 1 if the player has read <a href="../../en/pages/15587.html" title="Jack Be Nimble, Jack Be Thick">Jack Be Nimble, Jack Be Thick</a><sup class="reference" id="cite_ref-farmerdamage_8-1"><a href="#cite_note-farmerdamage-8">[8]</a></sup>.
+If defense is greater than or equal to half the actual damage being dealt, defense is reduced by up to 20% <sup class="reference" id="cite_ref-farmerdamage_8-2"><a href="#cite_note-farmerdamage-8">[8]</a></sup>. This causes a slight dampening of the defense stat in low-damage scenarios. If <code>defense &gt;= damage / 2</code>, defense is reduced by either 0%, 10%, or 20% (randomly determined), using the following formula: <code>defenseReduction = int(defense × reductionPercent)</code>, <code>defense = defense - defenseReduction</code>.
+</p><p>Example: A <a href="../../en/pages/2898.html" title="Duggy">Duggy</a> has a base damage of 6. If 6 damage would be dealt to a player with a <a href="../../en/pages/3513.html" title="Defense">Defense</a> of 5, half of 6 damage is 3. Since <samp>5 (Defense) &gt;= 3 (half damage)</samp>, defense could be lowered by up to 20%. <code>5 (Defense) × 20% = 1</code>, so in this scenario a player's effective defense could be reduced by up to 1.
+</p>
+<h3><span class="mw-headline" id="Damage_is_applied">Damage is applied</span></h3>
+<p>Incoming damage is reduced by the applicable defense, to a minimum of <samp>1</samp><sup class="reference" id="cite_ref-farmerdamage_8-3"><a href="#cite_note-farmerdamage-8">[8]</a></sup>. 
+</p><p>Example: 10 damage is dealt to a player with 6 defense. The player would take 4 damage, because <samp>10 - 6 = 4</samp>.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-rubyenchantment-1"><span class="mw-cite-backlink"><a href="#cite_ref-rubyenchantment_1-0">↑</a></span> <span class="reference-text">See <samp>StardewValley::RubyEnchantment</samp>.</span>
+</li>
+<li id="cite_note-ringcrit-2"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-ringcrit_2-0">2.0</a></sup> <sup><a href="#cite_ref-ringcrit_2-1">2.1</a></sup></span> <span class="reference-text">See <samp>StardewValley::Tools::MeleeWeapon.DoDamage</samp> and <samp>StardewValley::Objects::Ring</samp>.</span>
+</li>
+<li id="cite_note-aquamarineenchantment-3"><span class="mw-cite-backlink"><a href="#cite_ref-aquamarineenchantment_3-0">↑</a></span> <span class="reference-text">See <samp>StardewValley::AquamarineEnchantment</samp>.</span>
+</li>
+<li id="cite_note-weaponsxnb-4"><span class="mw-cite-backlink"><a href="#cite_ref-weaponsxnb_4-0">↑</a></span> <span class="reference-text">See <samp>weapons.xnb</samp> file in the game data.</span>
+</li>
+<li id="cite_note-dagger-5"><span class="mw-cite-backlink"><a href="#cite_ref-dagger_5-0">↑</a></span> <span class="reference-text">See <samp>StardewValley::Tools::MeleeWeapon.DoDamage</samp>; the dagger weapon type is 1.</span>
+</li>
+<li id="cite_note-scoutcode-6"><span class="mw-cite-backlink"><a href="#cite_ref-scoutcode_6-0">↑</a></span> <span class="reference-text">See <samp>StardewValley::GameLocation.damageMonster</samp>.</span>
+</li>
+<li id="cite_note-luckcrit-7"><span class="mw-cite-backlink"><a href="#cite_ref-luckcrit_7-0">↑</a></span> <span class="reference-text">See <samp>StardewValley::GameLocation.damageMonster</samp>; the formula does not edit the crit chance but luck level is added in the if statement to check for a crit.</span>
+</li>
+<li id="cite_note-farmerdamage-8"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-farmerdamage_8-0">8.0</a></sup> <sup><a href="#cite_ref-farmerdamage_8-1">8.1</a></sup> <sup><a href="#cite_ref-farmerdamage_8-2">8.2</a></sup> <sup><a href="#cite_ref-farmerdamage_8-3">8.3</a></sup></span> <span class="reference-text">See <samp>StardewValley::StardewValley::Farmer.takeDamage()</samp>.</span>
+</li>
+</ol></div>
+<!-- 
+NewPP limit report
+Cached time: 20260802205009
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.024 seconds
+Real time usage: 0.027 seconds
+Preprocessor visited node count: 240/1000000
+Post‐expand include size: 113/2097152 bytes
+Template argument size: 90/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3533/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.627      1 Template:For
+100.00%    1.627      1 -total
+-->
+<!-- Saved in parser cache with key enwiki:pcache:idhash:17642-0!canonical and timestamp 20260802205009 and revision id 191834
+ -->
+</div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="../../en/pages/17642.html">https://stardewvalleywiki.com/mediawiki/index.php?title=Combat/Mechanics&amp;oldid=191834</a>"</div>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a data-missing-local-language="en" data-missing-local-title="Special:Categories" data-offline-link-status="excluded" href="#">Category</a>: <ul><li><a data-missing-local-language="en" data-missing-local-title="Category:Combat" data-offline-link-status="excluded" href="#">Combat</a></li></ul></div></div>
+</div>
+</div>
+<div id="mw-navigation">
+<h2>Navigation menu</h2>
+<div id="mw-head">
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-personal-label" class="vector-menu" id="p-personal" role="navigation">
+<h3 id="p-personal-label">
+<span>Personal tools</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="vector-menu-content-list"><li id="pt-createaccount"><a data-missing-local-language="en" data-missing-local-title="Special:CreateAccount" data-offline-link-status="excluded" href="#">Create account</a></li><li id="pt-login"><a accesskey="o" data-missing-local-language="en" data-missing-local-title="Special:UserLogin" data-offline-link-status="excluded" href="#">Log in</a></li></ul>
+</div>
+</nav>
+<div id="left-navigation">
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-namespaces-label" class="vector-menu vector-menu-tabs vectorTabs" id="p-namespaces" role="navigation">
+<h3 id="p-namespaces-label">
+<span>Namespaces</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="vector-menu-content-list"><li class="selected" id="ca-nstab-main"><a accesskey="c" href="../../en/pages/17642.html" title="View the content page [c]">Page</a></li><li class="new" id="ca-talk"><a accesskey="t" data-missing-local-language="en" data-missing-local-title="Talk:Combat/Mechanics" data-offline-link-status="excluded" href="#" rel="discussion">Discussion</a></li></ul>
+</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-variants-label" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" id="p-variants" role="navigation">
+<input aria-labelledby="p-variants-label" class="vector-menu-checkbox vectorMenuCheckbox" type="checkbox"/>
+<h3 id="p-variants-label">
+<span>Variants</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="menu vector-menu-content-list"></ul>
+</div>
+</nav>
+</div>
+<div id="right-navigation">
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-views-label" class="vector-menu vector-menu-tabs vectorTabs" id="p-views" role="navigation">
+<h3 id="p-views-label">
+<span>Views</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="vector-menu-content-list"><li class="collapsible selected" id="ca-view"><a href="../../en/pages/17642.html">Read</a></li><li class="collapsible" id="ca-viewsource"><a accesskey="e" href="../../en/pages/17642.html" title="This page is protected.
+You can view its source [e]">View source</a></li><li class="collapsible" id="ca-history"><a accesskey="h" href="../../en/pages/17642.html" title="Past revisions of this page [h]">View history</a></li></ul>
+</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-cactions-label" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" id="p-cactions" role="navigation">
+<input aria-labelledby="p-cactions-label" class="vector-menu-checkbox vectorMenuCheckbox" type="checkbox"/>
+<h3 id="p-cactions-label">
+<span>More</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="menu vector-menu-content-list"></ul>
+</div>
+</nav>
+<div id="p-search" role="search">
+<h3>
+<label for="searchInput">Search</label>
+</h3>
+
+</div>
+</div>
+</div>
+<div id="mw-panel">
+<div id="p-logo" role="banner">
+<a class="mw-wiki-logo" href="../../en/pages/4.html" title="Visit the main page"></a>
+</div>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-navigation-label" class="vector-menu vector-menu-portal portal portal-first" id="p-navigation" role="navigation">
+<h3 id="p-navigation-label">
+<span>Navigation</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="vector-menu-content-list"><li id="n-mainpage-description"><a accesskey="z" href="../../en/pages/4.html" title="Visit the main page [z]">Main page</a></li><li id="n-recentchanges"><a accesskey="r" data-missing-local-language="en" data-missing-local-title="Special:RecentChanges" data-offline-link-status="excluded" href="#">Recent changes</a></li><li id="n-Admin-noticeboard"><a data-missing-local-language="en" data-missing-local-title="Stardew Valley Wiki:Admin noticeboard" data-offline-link-status="missing" href="#">Admin noticeboard</a></li><li id="n-Help-Editing"><a data-missing-local-language="en" data-missing-local-title="Help:Editing" data-offline-link-status="excluded" href="#">Help Editing</a></li><li id="n-randompage"><a accesskey="x" data-missing-local-language="en" data-missing-local-title="Special:Random" data-offline-link-status="excluded" href="#">Random page</a></li></ul>
+</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-Links-label" class="vector-menu vector-menu-portal portal" id="p-Links" role="navigation">
+<h3 id="p-Links-label">
+<span>Links</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="vector-menu-content-list"><li id="n-Official-Site"><a data-external-url="https://stardewvalley.net" href="#" rel="nofollow">Official Site</a></li><li id="n-Official-Forums"><a data-external-url="https://forums.stardewvalley.net/" href="#" rel="nofollow">Official Forums</a></li><li id="n-Official-Merchandise"><a data-external-url="https://www.stardewvalley.net/shop/" href="#" rel="nofollow">Official Merchandise</a></li><li id="n-Social-Media"><a data-external-url="https://www.stardewvalley.net/links/" href="#" rel="nofollow">Social Media</a></li></ul>
+</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-tb-label" class="vector-menu vector-menu-portal portal" id="p-tb" role="navigation">
+<h3 id="p-tb-label">
+<span>Tools</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a accesskey="j" data-missing-local-language="en" data-missing-local-title="Special:WhatLinksHere/Combat/Mechanics" data-offline-link-status="excluded" href="#">What links here</a></li><li id="t-recentchangeslinked"><a accesskey="k" data-missing-local-language="en" data-missing-local-title="Special:Recentchangeslinked/Combat/Mechanics" data-offline-link-status="excluded" href="#" rel="nofollow">Related changes</a></li><li id="t-upload"><a accesskey="u" data-missing-local-language="en" data-missing-local-title="Special:Upload" data-offline-link-status="excluded" href="#">Upload file</a></li><li id="t-specialpages"><a accesskey="q" data-missing-local-language="en" data-missing-local-title="Special:SpecialPages" data-offline-link-status="excluded" href="#">Special pages</a></li><li id="t-print"><a accesskey="p" href="#" rel="alternate" title="Printable version of this page [p]">Printable version</a></li><li id="t-permalink"><a href="../../en/pages/17642.html" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="../../en/pages/17642.html" title="More information about this page">Page information</a></li><li id="t-cargopagevalueslink"><a href="../../en/pages/17642.html" rel="cargo-pagevalues">Page values</a></li></ul>
+</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav aria-labelledby="p-lang-label" class="vector-menu vector-menu-portal portal" id="p-lang" role="navigation">
+<h3 id="p-lang-label">
+<span>In other languages</span>
+</h3>
+<!-- Please do not use the .body class, it is deprecated. -->
+<div class="body vector-menu-content">
+<!-- Please do not use the .menu class, it is deprecated. -->
+<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-de"><a class="interlanguage-link-target" data-missing-local-language="de" data-missing-local-title="Kampf/Mechanik" data-offline-link-status="missing" href="#" hreflang="de" lang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a class="interlanguage-link-target" data-missing-local-language="es" data-missing-local-title="Combate/Mecánica" data-offline-link-status="missing" href="#" hreflang="es" lang="es">Español</a></li><li class="interlanguage-link interwiki-fr"><a class="interlanguage-link-target" data-missing-local-language="fr" data-missing-local-title="Combat/Mécaniques" data-offline-link-status="missing" href="#" hreflang="fr" lang="fr">Français</a></li><li class="interlanguage-link interwiki-it"><a class="interlanguage-link-target" href="#" hreflang="it" lang="it" title="Combattimento/Meccaniche – italiano" data-missing-local-language="it" data-missing-local-title="Combattimento/Meccaniche – italiano" data-offline-link-status="excluded">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a class="interlanguage-link-target" data-missing-local-language="ja" data-missing-local-title="戦闘/メカニクス" data-offline-link-status="missing" href="#" hreflang="ja" lang="ja">日本語</a></li><li class="interlanguage-link interwiki-ko"><a class="interlanguage-link-target" data-missing-local-language="ko" data-missing-local-title="전투/메커니즘" data-offline-link-status="missing" href="#" hreflang="ko" lang="ko">한국어</a></li><li class="interlanguage-link interwiki-hu"><a class="interlanguage-link-target" data-missing-local-language="hu" data-missing-local-title="Harc/Mechanika" data-offline-link-status="missing" href="#" hreflang="hu" lang="hu">Magyar</a></li><li class="interlanguage-link interwiki-pt"><a class="interlanguage-link-target" data-missing-local-language="pt" data-missing-local-title="Combate/Mecânica" data-offline-link-status="missing" href="#" hreflang="pt" lang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a class="interlanguage-link-target" data-missing-local-language="ru" data-missing-local-title="Боевые навыки/Механика" data-offline-link-status="missing" href="#" hreflang="ru" lang="ru">Русский</a></li><li class="interlanguage-link interwiki-tr"><a class="interlanguage-link-target" data-missing-local-language="tr" data-missing-local-title="Savaşma/Mekanikler" data-offline-link-status="missing" href="#" hreflang="tr" lang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a class="interlanguage-link-target" data-missing-local-language="zh" data-missing-local-title="战斗/机制" data-offline-link-status="missing" href="#" hreflang="zh" lang="zh">中文</a></li></ul>
+</div>
+</nav>
+</div>
+</div>
+<footer class="mw-footer" id="footer" role="contentinfo">
+<ul id="footer-info">
+<li id="footer-info-lastmod"> This page was last edited on 19 March 2026, at 15:58.</li>
+<li id="footer-info-copyright">Content is available under <a class="external" data-external-url="https://creativecommons.org/licenses/by-nc-sa/3.0/" href="#" rel="nofollow">Creative Commons Attribution-NonCommercial-ShareAlike</a> unless otherwise noted.</li>
+</ul>
+<ul id="footer-places">
+<li id="footer-places-privacy"><a data-missing-local-language="en" data-missing-local-title="Stardew Valley Wiki:Privacy policy" data-offline-link-status="missing" href="#">Privacy policy</a></li>
+<li id="footer-places-about"><a data-missing-local-language="en" data-missing-local-title="Stardew Valley Wiki:About" data-offline-link-status="missing" href="#">About Stardew Valley Wiki</a></li>
+<li id="footer-places-disclaimer"><a data-missing-local-language="en" data-missing-local-title="Stardew Valley Wiki:General disclaimer" data-offline-link-status="missing" href="#">Disclaimers</a></li>
+<li id="footer-places-mobileview"><a class="noprint stopMobileRedirectToggle" href="../../en/pages/17642.html">Mobile view</a></li>
+</ul>
+<ul class="noprint" id="footer-icons">
+<li id="footer-copyrightico"><a data-external-url="https://creativecommons.org/licenses/by-nc-sa/3.0/" href="#"><img alt="Creative Commons Attribution-NonCommercial-ShareAlike" height="31" loading="lazy" src="../../assets/a5/a582f1dec4d5dc0d32e3c9b3c1ba95e1de2bbe0a0102bd265bfe38e640faaa69.png" width="88"/></a></li>
+<li id="footer-poweredbyico"><a data-external-url="https://www.mediawiki.org/" href="#"><img alt="Powered by MediaWiki" height="31" loading="lazy" src="../../assets/a2/a26827a91943911e5570ad3bf4e6d4ee751ed02fffdcc6567a818f48df40f70c.png" srcset="../../assets/80/805c30c7dcf6edbbb71fef5f57382e6b94d61a733f31d0462925b44f3422b11e.png 1.5x, ../../assets/84/84025a51e74ec30f14435de7a84d6e0a6aa6454bfde14ff67acefd42c167af7a.png 2x" width="88"/></a></li>
+</ul>
+<div style="clear: both;"></div>
+</footer>
+
+</body></html>
